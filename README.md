@@ -192,7 +192,7 @@ In particular in the case of the `ab-counter`, it is important to wrap all examp
 
 # Restrictions/Bugs
 
-At the time of writing this works on Firefox (v. 71), Chromium/Chrome (v. 78) and Safari.
+At the time of writing this works on Firefox (v71), Chromium/Chrome (v78) and Safari (v13).
 
 Sometimes, seemingly varying which system used, the `<ol class='sentence>...</ol>` container appears too high, resulting in the three lines of the example being too high for the number.
 This can be fixed by commenting or uncommenting the `padding: 0em;` value for the container in `linguistic-examples.css`.
