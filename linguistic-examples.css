@@ -38,14 +38,14 @@ body {
  ol.sentence {
     display:inline;
     list-style-type: none;
-    /* padding: 0em; */
+    padding: 0em;
     /* padding-top: -2em; */
   }
 
   ol.sentence li[lang=target-word]{
      /* font-weight:bold; */
      list-style-type: none;
-    padding: 0em;
+    /* padding: 0em; */
   }
 
 
