@@ -8,7 +8,7 @@ The major purpose is to allow discussions and papers to be written relatively ea
 
 # Installation
 
-The .css files should be called by the html document that you are using. 
+The .css files should be called by the html document that you are using.
 Thus, you should obtain local copies of the files and place them in a place accessible to the html document.
 To obtain the files, either fork or clone the repo, copy-paste the css code into an existing .css file that is called by your document, or link the linguistic-examples.css itself into the document.
 Use the appropriate containers within the your html document.
@@ -19,11 +19,11 @@ That's it.
 `linguistic-examples.css` defines a number of elements that should be used to format single line examples (i.e. where no glossing is required, for instance where the example is from the same language that the article is written in:
 
 - `<div class="example-container">...</div>`: a div element that is the parent of the example.
-- `<div class="individual-example">...</div>`: a div element, child of `example-container` that should be used to wrap the example elements for individual examples. Note 
+- `<div class="individual-example">...</div>`: a div element, child of `example-container` that should be used to wrap the example elements for individual examples. Note
 - `<div class="example-number">...</div>`: the parent div for the number of the example, *(1), (2) ... (n)*.
 - `<p class="ex"></p>`: the counter for the numbering. Note that no text should be placed within the `<p>` tags, as the numbering is done automatially.
 - `<div class="ab-counter">...</div>`: the parent div element for *a,b....n* numbering.
-- `<p class="ab"></p>`: the counter for *a,b...n* numbering. This automatically resets when a `individual-example` div is used. 
+- `<p class="ab"></p>`: the counter for *a,b...n* numbering. This automatically resets when a `individual-example` div is used.
 - `<div class="judgement">...</div>`: the parent div element for the judgement. **Note** that unlike the *(1), (2) ... (n)* numbering and *a, b ... c* numbering, this is *not* automatic, and thus you need to manually specify the judgement within a `<p>` element.
 - `<div class="example-sentence">...</div>` the parent div element for the example itself. Again, the example should be placed within a `<p>` element.
 
@@ -83,7 +83,7 @@ As with the single line examples, the elements following elements should be used
 - `<p class="ab"></p>`
 - `<div class="judgement">...</div>`
 
-**Important**: only one word and its associated gloss should be placed in the appropriate `li` elements, and words and glosses should be grouped together within `<ol class="word">...</ol>`. 
+**Important**: only one word and its associated gloss should be placed in the appropriate `li` elements, and words and glosses should be grouped together within `<ol class="word">...</ol>`.
 That is, do not put *all* the words of the sentence and their glosses within the same `li` elements.
 
 Thus, glossed examples should be formatted as follows:
@@ -133,7 +133,7 @@ Thus, glossed examples should be formatted as follows:
                         </ol>
                     </li>
                 </ol>
-            
+
             <p class='translation'>'I saw two bears, spreading on sandwiches.'</p>
             </div>
             </div>
@@ -174,7 +174,7 @@ Thus, glossed examples should be formatted as follows:
                             </ol>
                         </li>
                     </ol>
-                
+
                 <p class='translation'>'Oh that was a miracle!'</p>
                 </div>
                 </div>
@@ -190,9 +190,15 @@ And this will produce the following:
 Though the `ex` and `ab` counters can both be called without wrapping them in the `example-number` and `ab-counter` divs as suggested above, best practice dictates that you should still do so.
 In particular in the case of the `ab-counter`, it is important to wrap all examples in the `example-container` div, so that the counter is reset between examples.
 
-# Restrictions
+# Restrictions/Bugs
 
-At the time of writing this works on Firefox (v. 71) and Chromium/Chrome (v. 78).
+At the time of writing this works on Firefox (v71), Chromium/Chrome (v78) and Safari (v13).
+
+Sometimes, seemingly varying which system used, the `<ol class='sentence>...</ol>` container appears too high, resulting in the three lines of the example being too high for the number.
+This can be fixed by commenting or uncommenting the `padding: 0em;` value for the container in `linguistic-examples.css`.
+On a Mac, the value should be **commented out**.
+When using Linux, this should be **present**.
+I don't know why this happens, but it's a relatively simple fix.
 
 # Contributors
 
