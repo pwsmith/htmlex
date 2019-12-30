@@ -189,13 +189,20 @@ And this will produce the following:
 ## Tips
 
 Though the `ex` and `ab` counters can both be called without wrapping them in the `example-number` and `ab-counter` divs as suggested above, best practice dictates that you should still do so.
-In particular in the case of the `ab-counter`, it is important to wrap all examples in the `example-container` div, so that the counter is reset between examples.
+In particular in the case of the `ab-counter`, it is important to wrap all examples in the `example-container` div, so that the counter is reset between examples
+
+The `line-height` value of `example-container` should be adjusted according to your needs to set the line spacing of examples.
+The default value, `0.1` looks the nicest and was what was used in the screenshots above, but the value depends according to the rest of the document.
 
 # Availability
 
 ## Tested Browsers
 
 At the time of writing this works on Firefox (v71), Chromium/Chrome (v78) and Safari (v13).
+
+##
+
+It works in a regular .html document, and has been tested in both [reveal.js](https://github.com/hakimel/reveal.js/) and [impress.js](https://github.com/impress/impress.js).
 
 ## Known Bugs
 
@@ -209,7 +216,11 @@ I haven't tested the behaviour on Windows, so I don't know if similar behaviour 
 The major contributor is [Peter W. Smith](https://pwsmith.github.io), but the glossing template was modified from [this answer](https://linguistics.stackexchange.com/a/159) on stackexchange to a question about interlinear glossing.
 Thus, a lot of credit is due to [Pat](https://linguistics.stackexchange.com/users/136/pat), the author of the answer, for how to get the glosses lined up with the words.
 
-# Note
+# License
+
+Made available under the [MIT License](LICENSE.md)
+
+# Contributing
 
 My css skills are not all that advanced, so I'm sure there's better, less hacky ways of doing this.
-Please feel free to offer suggestions of improvement.
+Please feel free to offer suggestions of improvement either by [contacting me](https://pwsmith.github.io) or open a pull request.
