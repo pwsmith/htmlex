@@ -8,6 +8,9 @@ The major purpose is to allow discussions and papers to be written relatively ea
 
 # Installation
 
+Either fork or clone the repo, or download the files and place `linguistic-examples.css` in an appropriate place, accessible to your html document.
+
+# Use
 The .css files should be called by the html document that you are using.
 Thus, you should obtain local copies of the files and place them in a place accessible to the html document.
 To obtain the files, either fork or clone the repo, copy-paste the css code into an existing .css file that is called by your document, or link the linguistic-examples.css itself into the document.
