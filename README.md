@@ -1,21 +1,16 @@
-# Goals
-
 This repo contains a template for formatting linguistics examples in html.
 The primary goals are to allow for automatic numbering across an html page, as well as ensure that all elements are correctly aligned.
 It can be used for both single html pages for lingusitic examples, or for html based presentations, such as reveal.js.
 The major purpose is to allow discussions and papers to be written relatively easily in html, which doesn't offer the functionality natively, so that blog posts and talks can make good use of the medium.
 
 
-# Installation
+# Usage
 
-Either fork or clone the repo, or download the files and place `linguistic-examples.css` in an appropriate place, accessible to your html document.
+1. Fork or clone the repo, or downloads the files as ZIP.
+2. `linguistic-examples.css` should then be placed in an appropriate place in the directory you are writing in.
+3. Call the file from your html document using `<link rel="stylesheet" href="PATH/TO/THE/THE/DIRECTORY/linguistic-examples.css">`
+4. Use the appropriate containers within the your html document.
 
-# Use
-The .css files should be called by the html document that you are using.
-Thus, you should obtain local copies of the files and place them in a place accessible to the html document.
-To obtain the files, either fork or clone the repo, copy-paste the css code into an existing .css file that is called by your document, or link the linguistic-examples.css itself into the document.
-Use the appropriate containers within the your html document.
-That's it.
 
 ## Single line examples
 
@@ -73,7 +68,7 @@ Elements specific to glossed examples are:
 - `<div class="gloss-individual-example">...</div>`: the parent container of the individual example.
 - `<div class="gloss-example">...</div>`: the outer container to hold the first two lines of the examples, i.e. the target sentence and the gloss line.
 - `<ol class="sentence">...</ol>`: the inner container for the first two lines of the example.
-- `<li class="gloss-individual-word">...</li>`: the outer container for the wrapping of the individual words of the example. **Note**: see [Known Bugs](##Known Bugs) below.
+- `<li class="gloss-individual-word">...</li>`: the outer container for the wrapping of the individual words of the example. **Note**: see [Known Bugs](#known-bugs) below.
 - `<ol class="word">...</ol>`: the inner container that groups individual words and their associated gloss together.
 - `<li lang=target-word>...</li>`: the position where individual words from the target language should go.
 - `<li lang=target-gloss>...</li>`: the position where the gloss of the individual words should go.
