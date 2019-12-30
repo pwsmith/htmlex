@@ -8,7 +8,7 @@ The major purpose is to allow discussions and papers to be written relatively ea
 
 1. Fork or clone the repo, or downloads the files as ZIP.
 2. `linguistic-examples.css` should then be placed in an appropriate place in the directory you are writing in.
-3. Call the file from your html document using `<link rel="stylesheet" href="PATH/TO/THE/THE/DIRECTORY/linguistic-examples.css">`
+3. Call the file from your html document using `<link rel="stylesheet" href="PATH/TO/DIRECTORY/linguistic-examples.css">` using the appropriate path according to where you placed the file.
 4. Use the appropriate containers within the your html document.
 
 
