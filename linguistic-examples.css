@@ -35,10 +35,15 @@ body {
          margin-left: -2.5em;
   }
 
+  .word-list {
+    margin-top: -1em;
+  }
+
  ol.sentence {
     display:flex;
     list-style-type: none;
     padding: 0em;
+    padding-top: -2em;
     /* padding-top: -2em; */
   }
 
