@@ -73,7 +73,8 @@ Elements specific to glossed examples are:
 - `<div class="gloss-individual-example">...</div>`: the parent container of the individual example.
 - `<div class="gloss-example">...</div>`: the outer container to hold the first two lines of the examples, i.e. the target sentence and the gloss line.
 - `<ol class="sentence">...</ol>`: the inner container for the first two lines of the example.
-- `<ol class="word">...</ol>`: the container that groups individual words and their associated gloss together.
+- `<li class="gloss-individual-word">...</li>`: the outer container for the wrapping of the individual words of the example. **Note**: see [Known Bugs](##Known Bugs) below.
+- `<ol class="word">...</ol>`: the inner container that groups individual words and their associated gloss together.
 - `<li lang=target-word>...</li>`: the position where individual words from the target language should go.
 - `<li lang=target-gloss>...</li>`: the position where the gloss of the individual words should go.
 - `<p class="translation">...</p>`: where the translation of the sentence should go.
@@ -99,37 +100,37 @@ Thus, glossed examples should be formatted as follows:
             <div class='judgement'><p>#</p></div>
             <div class='gloss-example'>
                 <ol class='sentence'>
-                    <li>
+                    <li class="gloss-inidividual-word">
                         <ol class='word'>
                             <li lang=target-word>Ik</li>
                             <li lang=target-gloss>I.<span class='smallcaps'>nom</span></li>
                         </ol>
                     </li>
-                    <li>
+                    <li class="gloss-inidividual-word">
                         <ol class='word'>
                             <li lang=target-word>zag</li>
                             <li lang=target-gloss>see.<span class='smallcaps'>past</span></li>
                         </ol>
                     </li>
-                    <li>
+                    <li class="gloss-inidividual-word">
                         <ol class='word'>
                             <li lang=target-word>twee</li>
                             <li lang=target-gloss>two</li>
                         </ol>
                     </li>
-                    <li>
+                    <li class="gloss-inidividual-word">
                         <ol class='word'>
                             <li lang=target-word>ber-en,</li>
                             <li lang=target-gloss>bear-<span class='smallcaps'>pl</span></li>
                         </ol>
                     </li>
-                    <li>
+                    <li class="gloss-inidividual-word">
                         <ol class='word'>
                             <li lang=target-word>brood-je-s</li>
                             <li lang=target-gloss>bread-<span class='smallcaps'>dim-pl</span></li>
                         </ol>
                     </li>
-                    <li>
+                    <li class="gloss-inidividual-word">
                         <ol class='word'>
                             <li lang=target-word>smer-en</li>
                             <li lang=target-gloss>spread-<span class='smallcaps'>inf</span></li>
@@ -146,31 +147,31 @@ Thus, glossed examples should be formatted as follows:
                 <div class='judgement'><p></p></div>
                 <div class='gloss-example'>
                     <ol class='sentence'>
-                        <li>
+                        <li class="gloss-inidividual-word">
                             <ol class='word'>
                                 <li lang=target-word>Oh</li>
                                 <li lang=target-gloss>Oh</li>
                             </ol>
                         </li>
-                        <li>
+                        <li class="gloss-inidividual-word">
                             <ol class='word'>
                                 <li lang=target-word>dat</li>
                                 <li lang=target-gloss>that</li>
                             </ol>
                         </li>
-                        <li>
+                        <li class="gloss-inidividual-word">
                             <ol class='word'>
                                 <li lang=target-word>was</li>
                                 <li lang=target-gloss>be.<span class='smallcaps'>3.sg.past</span></li>
                             </ol>
                         </li>
-                        <li>
+                        <li class="gloss-inidividual-word">
                             <ol class='word'>
                                 <li lang=target-word>een</li>
                                 <li lang=target-gloss>a</li>
                             </ol>
                         </li>
-                        <li>
+                        <li class="gloss-inidividual-word">
                             <ol class='word'>
                                 <li lang=target-word>wonder!</li>
                                 <li lang=target-gloss>miracle</li>
@@ -193,15 +194,17 @@ And this will produce the following:
 Though the `ex` and `ab` counters can both be called without wrapping them in the `example-number` and `ab-counter` divs as suggested above, best practice dictates that you should still do so.
 In particular in the case of the `ab-counter`, it is important to wrap all examples in the `example-container` div, so that the counter is reset between examples.
 
-# Restrictions/Bugs
+# Availability
+
+## Tested Browsers
 
 At the time of writing this works on Firefox (v71), Chromium/Chrome (v78) and Safari (v13).
 
-Sometimes, seemingly varying which system used, the `<ol class='sentence>...</ol>` container appears too high, resulting in the three lines of the example being too high for the number.
-This can be fixed by commenting or uncommenting the `padding: 0em;` value for the container in `linguistic-examples.css`.
-On a Mac, the value should be **commented out**.
-When using Linux, this should be **present**.
-I don't know why this happens, but it's a relatively simple fix.
+## Known Bugs
+
+I have found a difference in the height of the glossing examples between using Linux and macOS.
+When used on linux computers, the examples appear one line too low relative to the judgement marker and the number counter.
+To fix this, the value of `gloss-individual-word` should be set to `-1em;` when using linux (if the problem appears, I have only tested it on Arch-based distros).
 
 # Contributors
 

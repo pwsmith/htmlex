@@ -1,3 +1,5 @@
+/* COMMON ELEMENTS */
+
 body {
     counter-reset: example-counter 0;
     }
@@ -12,7 +14,42 @@ body {
     content: counter(ab-counter, lower-latin) ".";
   }
 
+  .example-number {
+    width: 2em;
+  }
 
+  .ab-counter {
+    width: 2em;
+  }
+
+  .judgement {
+    text-align: right;
+    width: .5em;
+    padding-right: 0.5em;
+  }
+
+  .smallcaps {
+    font-variant: small-caps;
+  }
+  
+/* SINGLE LINE EXAMPLES */
+
+.example-container {
+  counter-reset: ab-counter 0;
+  line-height: 0.1;
+}
+
+.individual-example {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+/* GLOSSED EXAMPLES */
+
+.gloss-example-container {
+  counter-reset: ab-counter 0;
+}
 
 .gloss-individual-example {
     display: flex;
@@ -21,54 +58,37 @@ body {
     margin-bottom: -1em;
   }
 
-
-
-
-
  .gloss-example {
-    /* background: hsla(55, 99%, 80%, 50); */
-    /* padding: 5px; */
    overflow:auto;
-   /* margin-top: -1.5em; */
    width: 90%;
-         /* margin: 1em 0; */
-         margin-left: -2.5em;
+   margin-left: -2.5em;
   }
 
-  .word-list {
-    margin-top: -1em;
+  .gloss-individual-word {
+    margin-top: 0em;
   }
+  /* set the value of margin-top in gloss-inidividual-word if the line appears too low in the glossed examples. This is a problem that I have found when using css files on Arch based linux systems (Arch and Manjaro), not tested on others. */
 
  ol.sentence {
     display:flex;
     list-style-type: none;
     padding: 0em;
     padding-top: -2em;
-    /* padding-top: -2em; */
-  }
+    }
 
   ol.sentence li[lang=target-word]{
-     /* font-weight:bold; */
      list-style-type: none;
-    /* padding: 0em; */
   }
 
 
   ol.sentence li[lang=target-gloss]{
-     /* font-family: monospace; */
      list-style-type: none;
-    /* padding: 0; */
-
   }
 
   ol.word {
-   /* padding: .5em; */
    margin-bottom: .5em;
-   /* background: white; */
    float:left;
-   /* border: 1px dotted #ccc; */
    display: inline-block;
-   /* padding: 0em; */
   }
 
   p.translation {
@@ -77,50 +97,4 @@ body {
     display: inline-block;
     margin-top: -1em;
     margin-left: 2.5em;
-  }
-
-
-  /* New */
-
-  .example-container {
-    /* display: flex;
-    flex-direction: row;
-    align-items: flex-start; */
-    counter-reset: ab-counter 0;
-    line-height: 0.1;
-  }
-
-  .gloss-example-container {
-    counter-reset: ab-counter 0;
-
-  }
-  .individual-example {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-  }
-
-  .example-number {
-    width: 2em;
-  }
-
-  .example-sentence {
-
-  }
-
-  .ab-counter {
-    /* margin-top: .8em; */
-    /* padding-left: 0.5em; */
-    width: 2em;
-  }
-
-  .judgement {
-    /* margin-top: .8em; */
-    text-align: right;
-    width: .5em;
-    padding-right: 0.5em;
-  }
-
-  .smallcaps {
-    font-variant: small-caps;
   }
