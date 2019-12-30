@@ -200,8 +200,6 @@ The default value, `0.1` looks the nicest and was what was used in the screensho
 
 At the time of writing this works on Firefox (v71), Chromium/Chrome (v78) and Safari (v13).
 
-##
-
 It works in a regular .html document, and has been tested in both [reveal.js](https://github.com/hakimel/reveal.js/) and [impress.js](https://github.com/impress/impress.js).
 
 ## Known Bugs
