@@ -1,3 +1,5 @@
+# HTMLEX
+
 This repo contains a template for formatting linguistics examples in html.
 The primary goals are to allow for automatic numbering across an html page, as well as ensure that all elements are correctly aligned.
 It can be used for both single html pages for lingusitic examples, or for html based presentations, such as reveal.js.
@@ -9,7 +11,7 @@ The major purpose is to allow discussions and papers to be written relatively ea
 1. Fork or clone the repo, or downloads the files as ZIP.
 2. `linguistic-examples.css` should then be placed in an appropriate place in the directory you are writing in.
 3. Call the file from your html document using `<link rel="stylesheet" href="PATH/TO/DIRECTORY/linguistic-examples.css">` using the appropriate path according to where you placed the file.
-4. Use the appropriate containers within the your html document.
+4. Use the appropriate containers according to the instructions below within the your html document.
 
 
 ## Single line examples
@@ -200,11 +202,12 @@ At the time of writing this works on Firefox (v71), Chromium/Chrome (v78) and Sa
 I have found a difference in the height of the glossing examples between using Linux and macOS.
 When used on linux computers, the examples appear one line too low relative to the judgement marker and the number counter.
 To fix this, the value of `gloss-individual-word` should be set to `-1em;` when using linux (if the problem appears, I have only tested it on Arch-based distros).
+I haven't tested the behaviour on Windows, so I don't know if similar behaviour arises.
 
 # Contributors
 
 The major contributor is [Peter W. Smith](https://pwsmith.github.io), but the glossing template was modified from [this answer](https://linguistics.stackexchange.com/a/159) on stackexchange to a question about interlinear glossing.
-Thus, a lot of credit is due to Pat, the author of the answer, for how to get the glosses lined up with the words.
+Thus, a lot of credit is due to [Pat](https://linguistics.stackexchange.com/users/136/pat), the author of the answer, for how to get the glosses lined up with the words.
 
 # Note
 
