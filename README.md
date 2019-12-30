@@ -5,26 +5,24 @@ The primary goals are to allow for automatic numbering across an html page, as w
 It can be used for both single html pages for lingusitic examples, or for html based presentations, such as reveal.js.
 The major purpose is to allow discussions and papers to be written relatively easily in html, which doesn't offer the functionality natively, so that blog posts and talks can make good use of the medium.
 
-
 # Usage
 
-1. Fork or clone the repo, or downloads the files as ZIP.
+1. Fork or clone the repo, or download the files as ZIP.
 2. `linguistic-examples.css` should then be placed in an appropriate place in the directory you are writing in.
-3. Call the file from your html document using `<link rel="stylesheet" href="PATH/TO/DIRECTORY/linguistic-examples.css">` using the appropriate path according to where you placed the file.
+3. Call the file from your html document using `<link rel="stylesheet" href="PATH/TO/DIRECTORY/linguistic-examples.css">` using the relevant path according to where you placed the file.
 4. Use the appropriate containers according to the instructions below within the your html document.
-
 
 ## Single line examples
 
-`linguistic-examples.css` defines a number of elements that should be used to format single line examples (i.e. where no glossing is required, for instance where the example is from the same language that the article is written in:
+`linguistic-examples.css` defines a number of elements that should be used to format single line examples (i.e. where no glossing is required, for instance where the example is from the same language that the article is written in):
 
-- `<div class="example-container">...</div>`: a div element that is the parent of the example.
-- `<div class="individual-example">...</div>`: a div element, child of `example-container` that should be used to wrap the example elements for individual examples. Note
+- `<div class="example-container">...</div>`: a div element that contains each example (everything grouped under a number, so (1), (1a), (1b) etc.).
+- `<div class="individual-example">...</div>`: a div element, child of `example-container` that should be used to wrap the example elements for individual examples. Each subpart of an overall example should be wrapped in this. Thus, (1a), (1b) etc. should each be wrapped individually by a `individual-example` div.
 - `<div class="example-number">...</div>`: the parent div for the number of the example, *(1), (2) ... (n)*.
-- `<p class="ex"></p>`: the counter for the numbering. Note that no text should be placed within the `<p>` tags, as the numbering is done automatially.
+- `<p class="ex"></p>`: the counter for the numbering. Note that **no text should be placed within the `<p>` tags**, as the numbering is done automatially.
 - `<div class="ab-counter">...</div>`: the parent div element for *a,b....n* numbering.
-- `<p class="ab"></p>`: the counter for *a,b...n* numbering. This automatically resets when a `individual-example` div is used.
-- `<div class="judgement">...</div>`: the parent div element for the judgement. **Note** that unlike the *(1), (2) ... (n)* numbering and *a, b ... c* numbering, this is *not* automatic, and thus you need to manually specify the judgement within a `<p>` element.
+- `<p class="ab"></p>`: the counter for *a,b...n* numbering. This automatically resets when a `individual-example` div is used. As with `<p class="ex"></p>`, no text should be placed within the <p></p> tag.
+- `<div class="judgement">...</div>`: the parent div element for the judgement. **Note** that unlike the *(1), (2) ... (n)* numbering and *a, b ... c* numbering, this is *not* automatic, and thus you need to manually specify the judgement within the `<p>` element.
 - `<div class="example-sentence">...</div>` the parent div element for the example itself. Again, the example should be placed within a `<p>` element.
 
 Examples that are on a single line, i.e. without the need for glossing should use the following template:
@@ -67,7 +65,8 @@ This will produce the following:
 Examples that include glossing require a different layout to the above, but some elements are common to both.
 Elements specific to glossed examples are:
 
-- `<div class="gloss-individual-example">...</div>`: the parent container of the individual example.
+- `<div class="gloss-example-container">..</div>`: the parent container of an example, grouping everything together under a given number.
+- `<div class="gloss-individual-example">...</div>`: the parent container of the individual example. As above, (1a), (1b) etc. should be wrapped in unique `gloss-individual-example` divs.
 - `<div class="gloss-example">...</div>`: the outer container to hold the first two lines of the examples, i.e. the target sentence and the gloss line.
 - `<ol class="sentence">...</ol>`: the inner container for the first two lines of the example.
 - `<li class="gloss-individual-word">...</li>`: the outer container for the wrapping of the individual words of the example. **Note**: see [Known Bugs](#known-bugs) below.
@@ -84,7 +83,7 @@ As with the single line examples, the elements following elements should be used
 - `<p class="ab"></p>`
 - `<div class="judgement">...</div>`
 
-**Important**: only one word and its associated gloss should be placed in the appropriate `li` elements, and words and glosses should be grouped together within `<ol class="word">...</ol>`.
+**Important**: only one word and its associated gloss should be placed in the appropriate `li` elements, and words and glosses should be grouped together within `<ol class="word">...</ol>`, in turn within `<li class="gloss-individual-word>...</li>"`.
 That is, do not put *all* the words of the sentence and their glosses within the same `li` elements.
 
 Thus, glossed examples should be formatted as follows:
@@ -182,7 +181,7 @@ Thus, glossed examples should be formatted as follows:
         </div>
 ```
 
-And this will produce the following:
+The above will produce the following:
 
 ![gloss-example](images/gloss-example.png)
 
@@ -206,7 +205,7 @@ It works in a regular .html document, and has been tested in both [reveal.js](ht
 
 I have found a difference in the height of the glossing examples between using Linux and macOS.
 When used on linux computers, the examples appear one line too low relative to the judgement marker and the number counter.
-To fix this, the value of `gloss-individual-word` should be set to `-1em;` when using linux (if the problem appears, I have only tested it on Arch-based distros).
+To fix this, the value of `gloss-individual-word` should be set to `-1em` when using Linux (if the problem appears, I have only tested it on Arch-based distributions).
 I haven't tested the behaviour on Windows, so I don't know if similar behaviour arises.
 
 # Contributors
@@ -220,5 +219,4 @@ Made available under the [MIT License](LICENSE.md)
 
 # Contributing
 
-My css skills are not all that advanced, so I'm sure there's better, less hacky ways of doing this.
 Please feel free to offer suggestions of improvement either by [contacting me](https://pwsmith.github.io) or open a pull request.
