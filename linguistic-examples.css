@@ -65,7 +65,7 @@ body {
   }
 
   .gloss-individual-word {
-    margin-top: 0em;
+    margin-top: -0em;
   }
   /* set the value of margin-top in gloss-inidividual-word if the line appears too low in the glossed examples. This is a problem that I have found when using css files on Arch based linux systems (Arch and Manjaro), not tested on others. */
 
@@ -76,12 +76,12 @@ body {
     padding-top: -2em;
     }
 
-  ol.sentence li[lang=target-word]{
+ .target-word {
      list-style-type: none;
   }
 
 
-  ol.sentence li[lang=target-gloss]{
+  .target-gloss {
      list-style-type: none;
   }
 

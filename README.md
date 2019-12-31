@@ -71,8 +71,8 @@ Elements specific to glossed examples are:
 - `<ol class="sentence">...</ol>`: the inner container for the first two lines of the example.
 - `<li class="gloss-individual-word">...</li>`: the outer container for the wrapping of the individual words of the example. **Note**: see [Known Bugs](#known-bugs) below.
 - `<ol class="word">...</ol>`: the inner container that groups individual words and their associated gloss together.
-- `<li lang=target-word>...</li>`: the position where individual words from the target language should go.
-- `<li lang=target-gloss>...</li>`: the position where the gloss of the individual words should go.
+- `<li class="target-word">...</li>`: the position where individual words from the target language should go.
+- `<li class="target-gloss">...</li>`: the position where the gloss of the individual words should go.
 - `<p class="translation">...</p>`: where the translation of the sentence should go.
 
 As with the single line examples, the elements following elements should be used in the manner described above:
@@ -96,44 +96,43 @@ Thus, glossed examples should be formatted as follows:
             <div class='judgement'><p>#</p></div>
             <div class='gloss-example'>
                 <ol class='sentence'>
-                    <li class="gloss-inidividual-word">
+                    <li class="gloss-individual-word">
                         <ol class='word'>
-                            <li lang=target-word>Ik</li>
-                            <li lang=target-gloss>I.<span class='smallcaps'>nom</span></li>
+                            <li class="target-word">Ik</li>
+                            <li class="target-gloss">I.<span class='smallcaps'>nom</span></li>
                         </ol>
                     </li>
-                    <li class="gloss-inidividual-word">
+                    <li class="gloss-individual-word">
                         <ol class='word'>
-                            <li lang=target-word>zag</li>
-                            <li lang=target-gloss>see.<span class='smallcaps'>past</span></li>
+                            <li class="target-word">zag</li>
+                            <li class="target-gloss">see.<span class='smallcaps'>past</span></li>
                         </ol>
                     </li>
-                    <li class="gloss-inidividual-word">
+                    <li class="gloss-individual-word">
                         <ol class='word'>
-                            <li lang=target-word>twee</li>
-                            <li lang=target-gloss>two</li>
+                            <li class="target-word">twee</li>
+                            <li class="target-gloss">two</li>
                         </ol>
                     </li>
-                    <li class="gloss-inidividual-word">
+                    <li class="gloss-individual-word">
                         <ol class='word'>
-                            <li lang=target-word>ber-en,</li>
-                            <li lang=target-gloss>bear-<span class='smallcaps'>pl</span></li>
+                            <li class="target-word">ber-en,</li>
+                            <li class="target-gloss">bear-<span class='smallcaps'>pl</span></li>
                         </ol>
                     </li>
-                    <li class="gloss-inidividual-word">
+                    <li class="gloss-individual-word">
                         <ol class='word'>
-                            <li lang=target-word>brood-je-s</li>
-                            <li lang=target-gloss>bread-<span class='smallcaps'>dim-pl</span></li>
+                            <li class="target-word">brood-je-s</li>
+                            <li class="target-gloss">bread-<span class='smallcaps'>dim-pl</span></li>
                         </ol>
                     </li>
-                    <li class="gloss-inidividual-word">
+                    <li class="gloss-individual-word">
                         <ol class='word'>
-                            <li lang=target-word>smer-en</li>
-                            <li lang=target-gloss>spread-<span class='smallcaps'>inf</span></li>
+                            <li class="target-word">smer-en</li>
+                            <li class="target-gloss">spread-<span class='smallcaps'>inf</span></li>
                         </ol>
                     </li>
                 </ol>
-
             <p class='translation'>'I saw two bears, spreading on sandwiches.'</p>
             </div>
             </div>
@@ -143,38 +142,37 @@ Thus, glossed examples should be formatted as follows:
                 <div class='judgement'><p></p></div>
                 <div class='gloss-example'>
                     <ol class='sentence'>
-                        <li class="gloss-inidividual-word">
+                        <li class="gloss-individual-word">
                             <ol class='word'>
-                                <li lang=target-word>Oh</li>
-                                <li lang=target-gloss>Oh</li>
+                                <li class="target-word">Oh</li>
+                                <li class="target-gloss">Oh</li>
                             </ol>
                         </li>
-                        <li class="gloss-inidividual-word">
+                        <li class="gloss-individual-word">
                             <ol class='word'>
-                                <li lang=target-word>dat</li>
-                                <li lang=target-gloss>that</li>
+                                <li class="target-word">dat</li>
+                                <li class="target-gloss">that</li>
                             </ol>
                         </li>
-                        <li class="gloss-inidividual-word">
+                        <li class="gloss-individual-word">
                             <ol class='word'>
-                                <li lang=target-word>was</li>
-                                <li lang=target-gloss>be.<span class='smallcaps'>3.sg.past</span></li>
+                                <li class="target-word">was</li>
+                                <li class="target-gloss">be.<span class='smallcaps'>3.sg.past</span></li>
                             </ol>
                         </li>
-                        <li class="gloss-inidividual-word">
+                        <li class="gloss-individual-word">
                             <ol class='word'>
-                                <li lang=target-word>een</li>
-                                <li lang=target-gloss>a</li>
+                                <li class="target-word">een</li>
+                                <li class="target-gloss">a</li>
                             </ol>
                         </li>
-                        <li class="gloss-inidividual-word">
+                        <li class="gloss-individual-word">
                             <ol class='word'>
-                                <li lang=target-word>wonder!</li>
-                                <li lang=target-gloss>miracle</li>
+                                <li class="target-word">wonder!</li>
+                                <li class="target-gloss">miracle</li>
                             </ol>
                         </li>
                     </ol>
-
                 <p class='translation'>'Oh that was a miracle!'</p>
                 </div>
                 </div>
