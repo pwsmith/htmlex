@@ -29,30 +29,30 @@ Examples that are on a single line, i.e. without the need for glossing should us
 
 ```
 <div class="example-container">
-		<div class="individual-example">
-			<div class="example-number"><p class='ex'></p></div>
-			<div class="ab-counter"><p class='ab'></p></div>
-			<div class="judgement"><p>*</p></div>
-			<div class="example-sentence"><p>Example sentence</p></div>
-		</div>
-		<div class="individual-example">
-			<div class="example-number"><p></p></div>
-			<div class="ab-counter"><p class='ab'></p></div>
-			<div class="judgement"><p>*</p></div>
-			<div class="example-sentence"><p>Example sentence</p></div>
-		</div>
-		<div class="individual-example">
-			<div class="example-number"><p></p></div>
-			<div class="ab-counter"><p class='ab'></p></div>
-			<div class="judgement"><p>*</p></div>
-			<div class="example-sentence"><p>Example sentence</p></div>
-		</div>
-		<div class="individual-example">
-			<div class="example-number"><p></p></div>
-			<div class="ab-counter"><p class='ab'></p></div>
-			<div class="judgement"><p>*?</p></div>
-			<div class="example-sentence"><p>Example sentence</p></div>
-		</div>
+    <div class="individual-example">
+        <div class="example-number"><p class='ex'></p></div>
+        <div class="ab-counter"><p class='ab'></p></div>
+        <div class="judgement"><p></p></div>
+        <div class="example-sentence"><p>That's not my duck.</p></div>
+    </div>
+    <div class="individual-example">
+        <div class="example-number"><p></p></div>
+        <div class="ab-counter"><p class='ab'></p></div>
+        <div class="judgement"><p>#</p></div>
+        <div class="example-sentence"><p>It's beak is too shiny.</p></div>
+    </div>
+    <div class="individual-example">
+        <div class="example-number"><p></p></div>
+        <div class="ab-counter"><p class='ab'></p></div>
+        <div class="judgement"><p>*</p></div>
+        <div class="example-sentence"><p>My that's duck.</p></div>
+    </div>
+    <div class="individual-example">
+        <div class="example-number"><p></p></div>
+        <div class="ab-counter"><p class='ab'></p></div>
+        <div class="judgement"><p></p></div>
+        <div class="example-sentence"><p>Her eggs are so smooth.</p></div>
+    </div>
 </div>
 ```
 
@@ -90,93 +90,93 @@ Thus, glossed examples should be formatted as follows:
 
 ```
 <div class="gloss-example-container">
-            <div class='gloss-individual-example'>
-            <div class='example-number'><p class='ex'></p></div>
-            <div class="ab-counter"><p class='ab'></p></div>
-            <div class='judgement'><p>#</p></div>
-            <div class='gloss-example'>
-                <ol class='sentence'>
-                    <li class="gloss-individual-word">
-                        <ol class='word'>
-                            <li class="target-word">Ik</li>
-                            <li class="target-gloss">I.<span class='smallcaps'>nom</span></li>
-                        </ol>
-                    </li>
-                    <li class="gloss-individual-word">
-                        <ol class='word'>
-                            <li class="target-word">zag</li>
-                            <li class="target-gloss">see.<span class='smallcaps'>past</span></li>
-                        </ol>
-                    </li>
-                    <li class="gloss-individual-word">
-                        <ol class='word'>
-                            <li class="target-word">twee</li>
-                            <li class="target-gloss">two</li>
-                        </ol>
-                    </li>
-                    <li class="gloss-individual-word">
-                        <ol class='word'>
-                            <li class="target-word">ber-en,</li>
-                            <li class="target-gloss">bear-<span class='smallcaps'>pl</span></li>
-                        </ol>
-                    </li>
-                    <li class="gloss-individual-word">
-                        <ol class='word'>
-                            <li class="target-word">brood-je-s</li>
-                            <li class="target-gloss">bread-<span class='smallcaps'>dim-pl</span></li>
-                        </ol>
-                    </li>
-                    <li class="gloss-individual-word">
-                        <ol class='word'>
-                            <li class="target-word">smer-en</li>
-                            <li class="target-gloss">spread-<span class='smallcaps'>inf</span></li>
-                        </ol>
-                    </li>
-                </ol>
-            <p class='translation'>'I saw two bears, spreading on sandwiches.'</p>
-            </div>
-            </div>
-            <div class='gloss-individual-example'>
-                <div class='example-number'><p></p></div>
-                <div class="ab-counter"><p class='ab'></p></div>
-                <div class='judgement'><p></p></div>
-                <div class='gloss-example'>
-                    <ol class='sentence'>
-                        <li class="gloss-individual-word">
-                            <ol class='word'>
-                                <li class="target-word">Oh</li>
-                                <li class="target-gloss">Oh</li>
-                            </ol>
-                        </li>
-                        <li class="gloss-individual-word">
-                            <ol class='word'>
-                                <li class="target-word">dat</li>
-                                <li class="target-gloss">that</li>
-                            </ol>
-                        </li>
-                        <li class="gloss-individual-word">
-                            <ol class='word'>
-                                <li class="target-word">was</li>
-                                <li class="target-gloss">be.<span class='smallcaps'>3.sg.past</span></li>
-                            </ol>
-                        </li>
-                        <li class="gloss-individual-word">
-                            <ol class='word'>
-                                <li class="target-word">een</li>
-                                <li class="target-gloss">a</li>
-                            </ol>
-                        </li>
-                        <li class="gloss-individual-word">
-                            <ol class='word'>
-                                <li class="target-word">wonder!</li>
-                                <li class="target-gloss">miracle</li>
-                            </ol>
-                        </li>
+    <div class='gloss-individual-example'>
+        <div class='example-number'><p class='ex'></p></div>
+        <div class="ab-counter"><p class='ab'></p></div>
+        <div class='judgement'><p>#</p></div>
+        <div class='gloss-example'>
+            <ol class='sentence'>
+                <li class="gloss-individual-word">
+                    <ol class='word'>
+                        <li class="target-word">Ik</li>
+                        <li class="target-gloss">I.<span class='smallcaps'>nom</span></li>
                     </ol>
-                <p class='translation'>'Oh that was a miracle!'</p>
-                </div>
-                </div>
+                </li>
+                <li class="gloss-individual-word">
+                    <ol class='word'>
+                        <li class="target-word">zag</li>
+                        <li class="target-gloss">see.<span class='smallcaps'>past</span></li>
+                    </ol>
+                </li>
+                <li class="gloss-individual-word">
+                    <ol class='word'>
+                        <li class="target-word">twee</li>
+                        <li class="target-gloss">two</li>
+                    </ol>
+                </li>
+                <li class="gloss-individual-word">
+                    <ol class='word'>
+                        <li class="target-word">ber-en,</li>
+                        <li class="target-gloss">bear-<span class='smallcaps'>pl</span></li>
+                    </ol>
+                </li>
+                <li class="gloss-individual-word">
+                    <ol class='word'>
+                        <li class="target-word">brood-je-s</li>
+                        <li class="target-gloss">bread-<span class='smallcaps'>dim-pl</span></li>
+                    </ol>
+                </li>
+                <li class="gloss-individual-word">
+                    <ol class='word'>
+                        <li class="target-word">smer-en</li>
+                        <li class="target-gloss">spread-<span class='smallcaps'>inf</span></li>
+                    </ol>
+                </li>
+            </ol>
+            <p class='translation'>'I saw two bears, spreading on sandwiches.'</p>
         </div>
+    </div>
+    <div class='gloss-individual-example'>
+        <div class='example-number'><p></p></div>
+        <div class="ab-counter"><p class='ab'></p></div>
+        <div class='judgement'><p></p></div>
+        <div class='gloss-example'>
+            <ol class='sentence'>
+                <li class="gloss-individual-word">
+                    <ol class='word'>
+                        <li class="target-word">Oh</li>
+                        <li class="target-gloss">Oh</li>
+                    </ol>
+                </li>
+                <li class="gloss-individual-word">
+                    <ol class='word'>
+                        <li class="target-word">dat</li>
+                        <li class="target-gloss">that</li>
+                    </ol>
+                </li>
+                <li class="gloss-individual-word">
+                    <ol class='word'>
+                        <li class="target-word">was</li>
+                        <li class="target-gloss">be.<span class='smallcaps'>3.sg.past</span></li>
+                    </ol>
+                </li>
+                <li class="gloss-individual-word">
+                    <ol class='word'>
+                        <li class="target-word">een</li>
+                        <li class="target-gloss">a</li>
+                    </ol>
+                </li>
+                <li class="gloss-individual-word">
+                    <ol class='word'>
+                        <li class="target-word">wonder!</li>
+                        <li class="target-gloss">miracle</li>
+                    </ol>
+                </ol>
+            </li>
+            <p class='translation'>'Oh that was a miracle!'</p>
+        </div>
+    </div>
+</div>
 ```
 
 The above will produce the following:
