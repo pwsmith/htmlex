@@ -171,8 +171,8 @@ Thus, glossed examples should be formatted as follows:
                         <li class="target-word">wonder!</li>
                         <li class="target-gloss">miracle</li>
                     </ol>
-                </ol>
-            </li>
+                </li>
+            </ol>
             <p class='translation'>'Oh that was a miracle!'</p>
         </div>
     </div>
